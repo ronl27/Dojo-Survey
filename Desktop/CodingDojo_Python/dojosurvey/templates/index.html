@@ -1,0 +1,34 @@
+<html>
+   <head>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+      <title>Form Test Index</title>
+   </head>
+   <body>
+   <div class="container">
+     <h1>Dojo Survey</h1>
+     <h3>fill out the form below!</h3>
+     <!-- read on to learn about form actions, we'll talk about the method in a later section -->
+     <form action='/results' method='post'>
+         Your name: <input type='text' name='name'>
+         <br>
+         Dojo Location:
+           <select name="cities">
+             <option value="San Jose">San Jose</option>
+             <option value="Berkeley ">Berkeley</option>
+             <option value="San Francisco">San Francisco</option>
+             <option value="Seattle">Seattle</option>
+           </select>
+           <br>
+         Favorite Language:
+           <select name="languages">
+             <option value="Python">Python</option>
+             <option value="Javascript">Javascript</option>
+             <option value="Ruby on Rails">Ruby on Rails</option>
+             <option value="C++">C++</option>
+           </select>
+           <br>
+         <input type='submit' value='submit!'>
+     </form>
+   </div> <!--end of container-->
+   </body>
+</html>
